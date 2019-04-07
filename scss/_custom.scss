@@ -20,3 +20,109 @@ img {
 .hidden {
   display: none;
 }
+
+.no-menu.page {
+  .sidebar {
+    margin-left: -20rem;
+  }
+}
+
+.header-content {
+  display: flex;
+  .name-site {
+    flex: 0 0 5rem;
+    padding: 1rem;
+    @include desktop{
+      flex: 0 0 20rem;
+    }
+    background-color: $secondary;
+    h1 {
+      color: $white;
+      margin: 0;
+      display: flex;
+      align-items: center;
+    }
+    .title-desktop{
+      display: none;
+      @include desktop{
+        display: block
+      }
+    }
+    .title-phone{
+      @include desktop{
+        display: none
+      }
+    }
+  }
+}
+
+.nav-bar {
+  background-color: $primary;
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  .left-menu {
+    align-items: center;
+    display: flex;
+    padding: 1rem;
+    .fa-arrow-right{
+      display: none;
+    }
+  }
+  .right-menu {
+    display: flex;
+    .box {
+      display: flex;
+      align-items: center;
+      padding: 0 1rem;
+      &:hover{
+        background-color: darken($color: $primary, $amount: 5)
+      }
+      a {
+        color: $white;
+        text-decoration: none;
+        .badge {
+          background-color: $alternative;
+          border-radius: 50%;
+          padding: .5rem;
+          margin-left: .5rem;
+        }
+      }
+    }
+  }
+}
+.sidebar {
+  background-color: $darkBlack;
+  flex: 0 0 20rem;
+  padding: 1rem;
+  color: $white;
+  transition: margin-left .3s ease;
+  .user {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    img {
+      max-width: 5rem;
+    }
+    font-weight: normal;
+    .username {
+      font-weight: bold;
+      display: block;
+    }
+  }
+}
+.right-content {
+  display: flex;
+  flex-direction: column;
+}
+.wrapper-content {
+  flex: 1;
+  display: flex;
+}
+
+// Gentella
+
+.x_content{
+  margin: 1rem;
+  flex: 1;
+}
