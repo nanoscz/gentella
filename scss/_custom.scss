@@ -1,5 +1,4 @@
-
-html {
+ html {
   @include box-sizing(border-box);
   height: 100%;
 }
@@ -10,11 +9,12 @@ html {
 }
 body {
   font-family: $main_font;
+  height: 100%;
 }
 img {
   max-width: 100%;
 }
-.center {
+.text-center {
   text-align:center;
 }
 .hidden {

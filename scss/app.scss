@@ -1,3 +1,16 @@
 @import 'var';
 @import 'mixins';
+@import 'custom';
 
+.page {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.header-content {
+  background-color: $alternative
+}
+.main-content {
+  background: $primary;
+  flex: 1;
+}
