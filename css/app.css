@@ -1,5 +1,7 @@
+/** Media Queries **/
 html {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  height: 100%; }
 
 *,
 *:after,
@@ -7,7 +9,107 @@ html {
   box-sizing: inherit; }
 
 body {
-  color: blue;
+  font-family: "Raleway", sans-serif;
+  height: 100%; }
+
+img {
+  max-width: 100%; }
+
+.text-center {
+  text-align: center; }
+
+.hidden {
+  display: none; }
+
+.no-menu.page .sidebar {
+  margin-left: -20rem; }
+
+.header-content {
+  display: flex; }
+  .header-content .name-site {
+    flex: 0 0 5rem;
+    padding: 1rem;
+    background-color: #003f8c; }
+    @media only screen and (min-width: 1024px) {
+      .header-content .name-site {
+        flex: 0 0 20rem; } }
+    .header-content .name-site h1 {
+      color: #FFFFFF;
+      margin: 0;
+      display: flex;
+      align-items: center; }
+    .header-content .name-site .title-desktop {
+      display: none; }
+      @media only screen and (min-width: 1024px) {
+        .header-content .name-site .title-desktop {
+          display: block; } }
+    @media only screen and (min-width: 1024px) {
+      .header-content .name-site .title-phone {
+        display: none; } }
+
+.nav-bar {
+  background-color: #005b9f;
+  display: flex;
+  flex: 1;
+  justify-content: space-between; }
+  .nav-bar .left-menu {
+    align-items: center;
+    display: flex;
+    padding: 1rem; }
+    .nav-bar .left-menu .fa-arrow-right {
+      display: none; }
+  .nav-bar .right-menu {
+    display: flex; }
+    .nav-bar .right-menu .box {
+      display: flex;
+      align-items: center;
+      padding: 0 1rem; }
+      .nav-bar .right-menu .box:hover {
+        background-color: #004c86; }
+      .nav-bar .right-menu .box a {
+        color: #FFFFFF;
+        text-decoration: none; }
+        .nav-bar .right-menu .box a .badge {
+          background-color: #ce6b00;
+          border-radius: 50%;
+          padding: .5rem;
+          margin-left: .5rem; }
+
+.sidebar {
+  background-color: #373737;
+  flex: 0 0 20rem;
+  padding: 1rem;
+  color: #FFFFFF;
+  transition: margin-left .3s ease; }
+  .sidebar .user {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-weight: normal; }
+    .sidebar .user img {
+      max-width: 5rem; }
+    .sidebar .user .username {
+      font-weight: bold;
+      display: block; }
+
+.right-content {
+  display: flex;
+  flex-direction: column; }
+
+.wrapper-content {
+  flex: 1;
+  display: flex; }
+
+.x_content {
+  margin: 1rem;
+  flex: 1; }
+
+.page {
+  min-height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column; }
